@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
+<h1>Pins</h1>
 
-<div class="container">
-    <h1>Pins</h1>
+<div id="container">
 
         <% @pins.each do |pin| %>
-      <div class="col-md-3">
+      <div class="item" style="width: 35%">
         <div class="thumbnail">
             <%= pin.name %>
             <%= image_tag(pin.photo, :class => 'img-responsive') %>
@@ -23,3 +23,19 @@
 
     <%= link_to 'New Pin', new_pin_path %>
 </div>
+
+
+<script type="text/javascript">
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+    });
+  $(window).load(function(){
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+    });
+  })
+</script>
