@@ -6,7 +6,7 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
-      <introspection-schemas>*:</introspection-schemas>
+      <introspection-schemas>*</introspection-schemas>
     </data-source>
     <data-source name="identifier.sqlite" uuid="cd2c9ab7-61b4-4734-a53e-c26a34864fc3">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
